@@ -1,13 +1,7 @@
 provider "aws" {
-  region = var.aws_region
-}
-
-resource "aws_vpc" "main" {
-  cidr_block = "172.16.0.0/16"
-  instance_tenancy = "default"
-  tags = {
-    Name = "main"
-  }
+  access_key = "AKIASUEXDMPOX7B3JUBO"
+  secret_key = "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"
+  region = "us-east-2"
 }
 
 #Create security group with firewall rules
